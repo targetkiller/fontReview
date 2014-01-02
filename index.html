@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FontReview</title>
+	<link rel="stylesheet" href="base.css">
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="fr.css">
+</head>
+<body>
+	<header id="header-box">
+		<div class="header-wrap">
+			<a href="" class="logo">FontReview</a>
+		</div>
+	</header>
+
+	<article id="control-box">
+		<div class="control-wrap">
+			<div class="text-wrap">
+				<textarea id="input-text" type="text" value="" name="input-text" placeholder="please type something..."></textarea>
+				<label for="input-text">text</label>
+			</div>
+			<div class="property-wrap">
+				<div class="property-item" id="property1">
+					<div class="select-wrap">
+						<label for="color">color</label>
+						<input class="color" id="f1-color" value="000000">
+					</div>
+					<div class="select-wrap">
+						<label for="bgcolor">bgcolor</label>
+						<input class="color" id="f1-bgcolor" value="ffffff">
+					</div>
+					<div class="select-wrap fontfamily">
+						<label for="family">family</label>
+						<select name="family" id="f1-family">
+							<optgroup label="- safe list --------------------">
+								<option value="Arial" selected="selected">Arial</option>
+								<option value="Arial Black">Arial Black</option>
+								<option value="Comic Sans MS">Comic Sans MS</option>
+								<option value="Courier New">Courier New</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Impact">Impact</option>
+								<option value="Times New Roman">Times New Roman</option>
+								<option value="Trebuchet MS">Trebuchet MS</option>
+								<option value="Verdana">Verdana</option>
+							</optgroup>
+							<optgroup label="- Win default ------------------">
+								<option value="Arial">Arial</option>
+								<option value="Arial Black">Arial Black</option>
+								<option value="Comic Sans MS">Comic Sans MS</option>
+								<option value="Courier New">Courier New</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Impact">Impact</option>
+								<option value="Lucida Console">Lucida Console</option>
+								<option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+								<option value="Microsoft Sans Serif">Microsoft Sans Serif</option>
+								<option value="MS Mincho">MS Mincho</option>
+								<option value="Palatino Linotype">Palatino Linotype</option>
+								<option value="Symbol">Symbol</option>
+								<option value="Tahoma">Tahoma</option>
+								<option value="Times New Roman">Times New Roman</option>
+								<option value="Trebuchet MS">Trebuchet MS</option>
+								<option value="Verdana">Verdana</option>
+							</optgroup>
+							<optgroup label="- Mac default ------------------">
+								<option value="American Typewriter">American Typewriter</option>
+								<option value="Andale Mono">Andale Mono</option>
+								<option value="Arial">Arial</option>
+								<option value="Arial Black">Arial Black</option>
+								<option value="Arial Narrow">Arial Narrow</option>
+								<option value="Brush Script MT">Brush Script MT</option>
+								<option value="Capitals">Capitals</option>
+								<option value="Apple Chancery">Apple Chancery</option>
+								<option value="Baskerville">Baskerville</option>
+								<option value="Big Caslon">Big Caslon</option>
+								<option value="Charcoal">Charcoal</option>
+								<option value="Chicago">Chicago</option>
+								<option value="Comic Sans MS">Comic Sans MS</option>
+								<option value="Copperplate">Copperplate</option>
+								<option value="Courier">Courier</option>
+								<option value="Courier New">Courier New</option>
+								<option value="Didot">Didot</option>
+								<option value="Gadget">Gadget</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Geneva">Geneva</option>
+								<option value="Gill Sans">Gill Sans</option>
+								<option value="Futura">Futura</option>
+								<option value="Helvetica">Helvetica</option>
+								<option value="Helvetica Neue">Helvetica Neue</option>
+								<option value="Herculanum">Herculanum</option>
+								<option value="Hoefler Text">Hoefler Text</option>
+								<option value="Impact">Impact</option>
+								<option value="Lucida Grande">Lucida Grande</option>
+								<option value="Marker Felt">Marker Felt</option>
+								<option value="Monaco">Monaco</option>
+								<option value="New York">New York</option>
+								<option value="Optima">Optima</option>
+								<option value="Papyrus">Papyrus</option>
+								<option value="Sand">Sand</option>
+								<option value="Skia">Skia</option>
+								<option value="Techno">Techno</option>
+								<option value="Textile">Textile</option>
+								<option value="Times">Times</option>
+								<option value="Times New Roman">Times New Roman</option>
+								<option value="Trebuchet MS">Trebuchet MS</option>
+								<option value="Verdana">Verdana</option>
+								<option value="Zapfino">Zapfino</option>
+							</optgroup>
+							<optgroup label="- Windows Vista ----------------">
+								<option value="Calibri">Calibri</option>
+								<option value="Cambria">Cambria</option>
+								<option value="Candara">Candara</option>
+								<option value="Consolas">Consolas</option>
+								<option value="Constantia">Constantia</option>
+								<option value="Corbel">Corbel</option>
+								<option value="Nyala">Nyala</option>
+								<option value="Segoe UI">Segoe UI</option>
+								<option value="Segoe Print">Segoe Print</option>
+								<option value="Segoe Script">Segoe Script</option>
+							</optgroup>
+							<optgroup label="- Google Fonts ----------------">
+								<option value="Cantarell">Cantarell</option>
+								<option value="Cardo">Cardo</option>
+								<option value="Crimson Text">Crimson Text</option>
+								<option value="Droid Sans">Droid Sans</option>
+								<option value="Droid Sans Mono">Droid Sans Mono</option>
+								<option value="Droid Serif">Droid Serif</option>
+								<option value="IM Fell">IM Fell</option>
+								<option value="Inconsolata">Inconsolata</option>
+								<option value="Josefin Sans Std Light">Josefin Sans Std Light</option>
+								<option value="Lobster">Lobster</option>
+								<option value="Molengo">Molengo</option>
+								<option value="Neuton">Neuton</option>
+								<option value="Nobile">Nobile</option>
+								<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+								<option value="Old Standard TT">Old Standard TT</option>
+								<option value="Reenie Beanie">Reenie Beanie</option>
+								<option value="Tangerine">Tangerine</option>
+								<option value="Vollkorn">Vollkorn</option>
+								<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="select-wrap">
+						<label for="size">size</label>
+						<select name="size" id="f1-size">
+							<option value="12px">12px</option>
+							<option value="14px" selected="selected">14px</option>
+							<option value="15px">15px</option>
+							<option value="16px">16px</option>
+							<option value="17px">17px</option>
+							<option value="18px">18px</option>
+							<option value="19px">19px</option>
+							<option value="20px">20px</option>
+							<option value="21px">21px</option>
+							<option value="22px">22px</option>
+							<option value="23px">23px</option>
+							<option value="24px">24px</option>
+							<option value="25px">25px</option>
+							<option value="26px">26px</option>
+							<option value="27px">27px</option>
+							<option value="28px">28px</option>
+							<option value="29px">29px</option>
+							<option value="30px">30px</option>
+							<option value="36px">36px</option>
+							<option value="48px">48px</option>
+							<option value="60px">60px</option>
+							<option value="72px">72px</option>
+						</select>
+					</div>
+					<div class="select-wrap">
+						<label for="lineheight">lineheight</label>
+						<select name="lineheight" id="f1-lineheight">
+							<option value="6px">6px</option>
+							<option value="7px">7px</option>
+							<option value="8px">8px</option>
+							<option value="9px">9px</option>
+							<option value="10px">10px</option>
+							<option value="11px">11px</option>
+							<option value="12px">12px</option>
+							<option value="14px">14px</option>
+							<option value="15px">15px</option>
+							<option value="16px" selected="selected">16px</option>
+							<option value="17px">17px</option>
+							<option value="18px">18px</option>
+							<option value="19px">19px</option>
+							<option value="20px">20px</option>
+							<option value="21px">21px</option>
+							<option value="22px">22px</option>
+							<option value="23px">23px</option>
+							<option value="24px">24px</option>
+							<option value="25px">25px</option>
+							<option value="26px">26px</option>
+							<option value="27px">27px</option>
+							<option value="28px">28px</option>
+							<option value="29px">29px</option>
+							<option value="30px">30px</option>
+							<option value="36px">36px</option>
+							<option value="48px">48px</option>
+							<option value="60px">60px</option>
+							<option value="72px">72px</option>
+						</select>
+					</div>
+					<div class="more-control more1 hide">
+						<div class="select-wrap">
+							<label for="letterspacing">letterspacing</label>
+							<select name="letterspacing" id="f1-letterspacing">
+								<option value="-7px">-7px</option>
+								<option value="-6px">-6px</option>
+								<option value="-5px">-5px</option>
+								<option value="-4px">-4px</option>
+								<option value="-3px">-3px</option>
+								<option value="-2px">-2px</option>
+								<option value="-1px">-1px</option>
+								<option value="0px" selected="selected">0px</option>
+								<option value="1px">1px</option>
+								<option value="2px">2px</option>
+								<option value="3px">3px</option>
+								<option value="4px">4px</option>
+								<option value="5px">5px</option>
+								<option value="6px">6px</option>
+								<option value="7px">7px</option>
+							</select>
+						</div>
+						<div class="select-wrap">
+							<label for="textalign">textalign</label>
+							<select name="textalign" id="f1-textalign">
+								<option value="left" selected="selected">left</option>
+								<option value="center">center</option>
+								<option value="right">right</option>
+								<option value="justify">justify</option>
+							</select>
+						</div>
+						<div class="select-wrap">
+							<label for="wordspace">wordspace</label>
+							<select name="wordspace" id="f1-wordspace">
+								<option value="-7px">-7px</option>
+								<option value="-6px">-6px</option>
+								<option value="-5px">-5px</option>
+								<option value="-4px">-4px</option>
+								<option value="-3px">-3px</option>
+								<option value="-2px">-2px</option>
+								<option value="-1px">-1px</option>
+								<option value="normal" selected="selected">normal</option>
+								<option value="0px">0px</option>
+								<option value="1px">1px</option>
+								<option value="2px">2px</option>
+								<option value="3px">3px</option>
+								<option value="4px">4px</option>
+								<option value="5px">5px</option>
+								<option value="6px">6px</option>
+								<option value="7px">7px</option>
+							</select>
+						</div>
+						<div class="select-wrap">
+							<label for="decoration">decoration</label>
+							<select name="decoration" id="f1-decoration">
+								<option value="none" selected="selected">none</option>
+								<option value="underline">underline</option>
+								<option value="overline">overline</option>
+								<option value="line-through">line-through</option>
+							</select>
+						</div>
+					</div>
+					<a href="javascript:void(0);" class="showmore-control showmore1">更多</a>
+					<a href="javascript:void(0);" class="output out1">显示css</a>
+					<textarea class="code code1 hide"></textarea>
+				</div>
+				<div class="property-item" id="property2">
+					<div class="select-wrap">
+						<label for="color">color</label>
+						<input class="color" id="f2-color" value="000000">
+					</div>
+					<div class="select-wrap">
+						<label for="bgcolor">bgcolor</label>
+						<input class="color" id="f2-bgcolor" value="ffffff">
+					</div>
+					<div class="select-wrap fontfamily">
+						<label for="family">family</label>
+						<select name="family" id="f2-family">
+							<optgroup label="- safe list --------------------">
+								<option value="Arial" selected="selected">Arial</option>
+								<option value="Arial Black">Arial Black</option>
+								<option value="Comic Sans MS">Comic Sans MS</option>
+								<option value="Courier New">Courier New</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Impact">Impact</option>
+								<option value="Times New Roman">Times New Roman</option>
+								<option value="Trebuchet MS">Trebuchet MS</option>
+								<option value="Verdana">Verdana</option>
+							</optgroup>
+							<optgroup label="- Win default ------------------">
+								<option value="Arial">Arial</option>
+								<option value="Arial Black">Arial Black</option>
+								<option value="Comic Sans MS">Comic Sans MS</option>
+								<option value="Courier New">Courier New</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Impact">Impact</option>
+								<option value="Lucida Console">Lucida Console</option>
+								<option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+								<option value="Microsoft Sans Serif">Microsoft Sans Serif</option>
+								<option value="MS Mincho">MS Mincho</option>
+								<option value="Palatino Linotype">Palatino Linotype</option>
+								<option value="Symbol">Symbol</option>
+								<option value="Tahoma">Tahoma</option>
+								<option value="Times New Roman">Times New Roman</option>
+								<option value="Trebuchet MS">Trebuchet MS</option>
+								<option value="Verdana">Verdana</option>
+							</optgroup>
+							<optgroup label="- Mac default ------------------">
+								<option value="American Typewriter">American Typewriter</option>
+								<option value="Andale Mono">Andale Mono</option>
+								<option value="Arial">Arial</option>
+								<option value="Arial Black">Arial Black</option>
+								<option value="Arial Narrow">Arial Narrow</option>
+								<option value="Brush Script MT">Brush Script MT</option>
+								<option value="Capitals">Capitals</option>
+								<option value="Apple Chancery">Apple Chancery</option>
+								<option value="Baskerville">Baskerville</option>
+								<option value="Big Caslon">Big Caslon</option>
+								<option value="Charcoal">Charcoal</option>
+								<option value="Chicago">Chicago</option>
+								<option value="Comic Sans MS">Comic Sans MS</option>
+								<option value="Copperplate">Copperplate</option>
+								<option value="Courier">Courier</option>
+								<option value="Courier New">Courier New</option>
+								<option value="Didot">Didot</option>
+								<option value="Gadget">Gadget</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Geneva">Geneva</option>
+								<option value="Gill Sans">Gill Sans</option>
+								<option value="Futura">Futura</option>
+								<option value="Helvetica">Helvetica</option>
+								<option value="Helvetica Neue">Helvetica Neue</option>
+								<option value="Herculanum">Herculanum</option>
+								<option value="Hoefler Text">Hoefler Text</option>
+								<option value="Impact">Impact</option>
+								<option value="Lucida Grande">Lucida Grande</option>
+								<option value="Marker Felt">Marker Felt</option>
+								<option value="Monaco">Monaco</option>
+								<option value="New York">New York</option>
+								<option value="Optima">Optima</option>
+								<option value="Papyrus">Papyrus</option>
+								<option value="Sand">Sand</option>
+								<option value="Skia">Skia</option>
+								<option value="Techno">Techno</option>
+								<option value="Textile">Textile</option>
+								<option value="Times">Times</option>
+								<option value="Times New Roman">Times New Roman</option>
+								<option value="Trebuchet MS">Trebuchet MS</option>
+								<option value="Verdana">Verdana</option>
+								<option value="Zapfino">Zapfino</option>
+							</optgroup>
+							<optgroup label="- Windows Vista ----------------">
+								<option value="Calibri">Calibri</option>
+								<option value="Cambria">Cambria</option>
+								<option value="Candara">Candara</option>
+								<option value="Consolas">Consolas</option>
+								<option value="Constantia">Constantia</option>
+								<option value="Corbel">Corbel</option>
+								<option value="Nyala">Nyala</option>
+								<option value="Segoe UI">Segoe UI</option>
+								<option value="Segoe Print">Segoe Print</option>
+								<option value="Segoe Script">Segoe Script</option>
+							</optgroup>
+							<optgroup label="- Google Fonts ----------------">
+								<option value="Cantarell">Cantarell</option>
+								<option value="Cardo">Cardo</option>
+								<option value="Crimson Text">Crimson Text</option>
+								<option value="Droid Sans">Droid Sans</option>
+								<option value="Droid Sans Mono">Droid Sans Mono</option>
+								<option value="Droid Serif">Droid Serif</option>
+								<option value="IM Fell">IM Fell</option>
+								<option value="Inconsolata">Inconsolata</option>
+								<option value="Josefin Sans Std Light">Josefin Sans Std Light</option>
+								<option value="Lobster">Lobster</option>
+								<option value="Molengo">Molengo</option>
+								<option value="Neuton">Neuton</option>
+								<option value="Nobile">Nobile</option>
+								<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+								<option value="Old Standard TT">Old Standard TT</option>
+								<option value="Reenie Beanie">Reenie Beanie</option>
+								<option value="Tangerine">Tangerine</option>
+								<option value="Vollkorn">Vollkorn</option>
+								<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="select-wrap">
+						<label for="size">size</label>
+						<select name="size" id="f2-size">
+							<option value="12px">12px</option>
+							<option value="14px" selected="selected">14px</option>
+							<option value="15px">15px</option>
+							<option value="16px">16px</option>
+							<option value="17px">17px</option>
+							<option value="18px">18px</option>
+							<option value="19px">19px</option>
+							<option value="20px">20px</option>
+							<option value="21px">21px</option>
+							<option value="22px">22px</option>
+							<option value="23px">23px</option>
+							<option value="24px">24px</option>
+							<option value="25px">25px</option>
+							<option value="26px">26px</option>
+							<option value="27px">27px</option>
+							<option value="28px">28px</option>
+							<option value="29px">29px</option>
+							<option value="30px">30px</option>
+							<option value="36px">36px</option>
+							<option value="48px">48px</option>
+							<option value="60px">60px</option>
+							<option value="72px">72px</option>
+						</select>
+					</div>
+					<div class="select-wrap">
+						<label for="lineheight">lineheight</label>
+						<select name="lineheight" id="f2-lineheight">
+							<option value="6px">6px</option>
+							<option value="7px">7px</option>
+							<option value="8px">8px</option>
+							<option value="9px">9px</option>
+							<option value="10px">10px</option>
+							<option value="11px">11px</option>
+							<option value="12px">12px</option>
+							<option value="14px">14px</option>
+							<option value="15px">15px</option>
+							<option value="16px" selected="selected">16px</option>
+							<option value="17px">17px</option>
+							<option value="18px">18px</option>
+							<option value="19px">19px</option>
+							<option value="20px">20px</option>
+							<option value="21px">21px</option>
+							<option value="22px">22px</option>
+							<option value="23px">23px</option>
+							<option value="24px">24px</option>
+							<option value="25px">25px</option>
+							<option value="26px">26px</option>
+							<option value="27px">27px</option>
+							<option value="28px">28px</option>
+							<option value="29px">29px</option>
+							<option value="30px">30px</option>
+							<option value="36px">36px</option>
+							<option value="48px">48px</option>
+							<option value="60px">60px</option>
+							<option value="72px">72px</option>
+						</select>
+					</div>
+					<div class="more-control more2 hide">
+						<div class="select-wrap">
+							<label for="letterspacing">letterspacing</label>
+							<select name="letterspacing" id="f1-letterspacing">
+								<option value="-7px">-7px</option>
+								<option value="-6px">-6px</option>
+								<option value="-5px">-5px</option>
+								<option value="-4px">-4px</option>
+								<option value="-3px">-3px</option>
+								<option value="-2px">-2px</option>
+								<option value="-1px">-1px</option>
+								<option value="0px" selected="selected">0px</option>
+								<option value="1px">1px</option>
+								<option value="2px">2px</option>
+								<option value="3px">3px</option>
+								<option value="4px">4px</option>
+								<option value="5px">5px</option>
+								<option value="6px">6px</option>
+								<option value="7px">7px</option>
+							</select>
+						</div>
+						<div class="select-wrap">
+							<label for="textalign">textalign</label>
+							<select name="textalign" id="f1-textalign">
+								<option value="left" selected="selected">left</option>
+								<option value="center">center</option>
+								<option value="right">right</option>
+								<option value="justify">justify</option>
+							</select>
+						</div>
+						<div class="select-wrap">
+							<label for="wordspace">wordspace</label>
+							<select name="wordspace" id="f1-wordspace">
+								<option value="-7px">-7px</option>
+								<option value="-6px">-6px</option>
+								<option value="-5px">-5px</option>
+								<option value="-4px">-4px</option>
+								<option value="-3px">-3px</option>
+								<option value="-2px">-2px</option>
+								<option value="-1px">-1px</option>
+								<option value="normal" selected="selected">normal</option>
+								<option value="0px">0px</option>
+								<option value="1px">1px</option>
+								<option value="2px">2px</option>
+								<option value="3px">3px</option>
+								<option value="4px">4px</option>
+								<option value="5px">5px</option>
+								<option value="6px">6px</option>
+								<option value="7px">7px</option>
+							</select>
+						</div>
+						<div class="select-wrap">
+							<label for="decoration">decoration</label>
+							<select name="decoration" id="f1-decoration">
+								<option value="none" selected="selected">none</option>
+								<option value="underline">underline</option>
+								<option value="overline">overline</option>
+								<option value="line-through">line-through</option>
+							</select>
+						</div>
+					</div>
+					<a href="javascript:void(0);" class="showmore-control showmore2">更多</a>
+					<a href="javascript:void(0);" class="output out2">显示css</a>
+					<textarea class="code code2 hide"></textarea>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<article id="preview-box">
+		<div class="preview-wrap">
+			<div class="preview-item" id="preview1">
+				<div class="result-wrap">
+					<label>regular</label>
+					<p class="result-text" style="font-weight:normal;font-style:normal">regular</p>
+				</div>
+				<div class="result-wrap">
+					<label>bold</label>
+					<p class="result-text" style="font-weight:bold;font-style:normal">bold</p>
+				</div>
+				<div class="result-wrap">
+					<label>italic</label>
+					<p class="result-text" style="font-weight:normal;font-style:italic">italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>bold italic</label>
+					<p class="result-text" style="font-weight:bold;font-style:italic">bold italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase regular</label>
+					<p class="result-text" style="font-weight:normal;font-style:normal;text-transform:uppercase">uppercase regular</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase bold</label>
+					<p class="result-text" style="font-weight:bold;font-style:normal;text-transform:uppercase">uppercase bold</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase italic</label>
+					<p class="result-text" style="font-weight:normal;font-style:italic;text-transform:uppercase">uppercase italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase bold italic</label>
+					<p class="result-text" style="font-weight:bold;font-style:italic;text-transform:uppercase">uppercase bold italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps regular</label>
+					<p class="result-text" style="font-weight:normal;font-style:normal;text-transform:small-caps">small-caps regular</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps bold</label>
+					<p class="result-text" style="font-weight:bold;font-style:normal;text-transform:small-caps">small-caps bold</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps italic</label>
+					<p class="result-text" style="font-weight:normal;font-style:italic;text-transform:small-caps">small-caps italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps bold italic</label>
+					<p class="result-text" style="font-weight:bold;font-style:italic;text-transform:small-caps">small-caps bold italic</p>
+				</div>
+			</div>
+			<div class="preview-item" id="preview2">
+				<div class="result-wrap">
+					<label>regular</label>
+					<p class="result-text" style="font-weight:normal;font-style:normal">regular</p>
+				</div>
+				<div class="result-wrap">
+					<label>bold</label>
+					<p class="result-text" style="font-weight:bold;font-style:normal">bold</p>
+				</div>
+				<div class="result-wrap">
+					<label>italic</label>
+					<p class="result-text" style="font-weight:normal;font-style:italic">italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>bold italic</label>
+					<p class="result-text" style="font-weight:bold;font-style:italic">bold italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase regular</label>
+					<p class="result-text" style="font-weight:normal;font-style:normal;text-transform:uppercase">uppercase regular</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase bold</label>
+					<p class="result-text" style="font-weight:bold;font-style:normal;text-transform:uppercase">uppercase bold</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase italic</label>
+					<p class="result-text" style="font-weight:normal;font-style:italic;text-transform:uppercase">uppercase italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>uppercase bold italic</label>
+					<p class="result-text" style="font-weight:bold;font-style:italic;text-transform:uppercase">uppercase bold italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps regular</label>
+					<p class="result-text" style="font-weight:normal;font-style:normal;text-transform:small-caps">small-caps regular</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps bold</label>
+					<p class="result-text" style="font-weight:bold;font-style:normal;text-transform:small-caps">small-caps bold</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps italic</label>
+					<p class="result-text" style="font-weight:normal;font-style:italic;text-transform:small-caps">small-caps italic</p>
+				</div>
+				<div class="result-wrap">
+					<label>small-caps bold italic</label>
+					<p class="result-text" style="font-weight:bold;font-style:italic;text-transform:small-caps">small-caps bold italic</p>
+				</div>
+			</div>
+		</div>
+	</article>
+	
+	<footer>made by tqtan <a href="http://isux.tencent.com">@ISUX</a></footer>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="jscolor.js"></script>
+	<script src="fr.js"></script>
+</body>
+</html>

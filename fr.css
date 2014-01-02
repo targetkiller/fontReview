@@ -1,0 +1,47 @@
+/*
+*
+* @author:tqtan;
+* @date:2013/12/24;
+* @content:fontReview;
+*
+*/
+body{font-family: Microsoft yahei;}
+.hide{display: none;}
+
+#header-box{width: 100%;height: 60px;position: relative;background-color: #8A3324;box-shadow:0 1px 3px #333;}
+.header-wrap{width: 980px;margin: 0 auto;}
+.header-wrap .logo{position: absolute;height: 60px;width: 120px;line-height: 60px;font-size: 25px;display: inline-block;text-decoration: none;color: #fff;font-family: 'Oleo Script', cursive;}
+.header-wrap .logo:hover{text-shadow:2px 2px 5px #333;}
+
+#control-box{width: 100%;position: relative;background-color: #032536;}
+.control-wrap{width: 980px;height: 100%;margin: 0 auto;padding: 15px 0;}
+.text-wrap{position: relative;width: 50%;height: 80px;margin: 20px auto;}
+.text-wrap label{position: absolute;top: -22px;left: 0;height: 22px;line-height: 22px;font-size: 14px;width: 100px;background-color: #254758;color: #fff;line-height: 20px;text-align: center;}
+#input-text{resize:none;display: inline-block;width: 100%;height: 100%;font-family: Microsoft yahei;border: 2px solid #254758;}
+#input-text:focus{outline: none;}
+.input-text-active #input-text{border-color:#eb5432;}
+.input-text-active label{background-color:#eb5432;}
+.property-wrap{width: 100%;font-size: 0;letter-spacing: -4px;word-spacing: -1px;}
+.property-item{display: inline-block;width: 50%;font-size: 16px;letter-spacing: 0;word-spacing: 0;text-align: center;vertical-align: top;}
+.select-wrap{margin-bottom: 5px;width: 203px;display: inline-block;}
+.select-wrap select{width: 100px;vertical-align: middle;}
+.select-wrap label{color: #fff;width: 97px;display: inline-block;text-align: center;background-color: #254758;font-size: 14px;line-height: 22px;height: 22px;vertical-align: middle;}
+.fontfamily{width: 410px;}
+.fontfamily select{width: 308px;}
+.color{width: 96px;vertical-align: middle;border-width: 1px;}
+.showmore-control{display: inline-block;text-decoration: none;color: #fff;text-align: center;width: 410px;background-color: #254758;height: 24px;line-height: 24px;font-size: 16px;}
+.showmore-control:hover{background-color: #4e5f72}
+.output{margin-top: 5px;display: inline-block;text-decoration: none;color: #fff;text-align: center;width: 410px;background-color: #254758;height: 24px;line-height: 24px;font-size: 16px;}
+.output:hover{background-color: #4e5f72}
+.code{background-color: #254758;padding: 15px;color: #fff;width: 370px;height: 120px;margin: 5px auto;resize:none;}
+
+#preview-box{width: 100%;min-height: 600px;position: relative;background-color: #eee;box-shadow:0 -1px 3px #333;}
+.preview-wrap{width: 980px;margin:0 auto;font-size: 0;letter-spacing: -4px;word-spacing: -1px;}
+.preview-item{display: inline-block;width: 46%;font-size: 16px;letter-spacing: 0;word-spacing: 0;padding: 2%;vertical-align: top;}
+.result-wrap{width: 410px;margin: 0 auto;margin-bottom: 10px;position: relative;}
+.result-wrap label{position: absolute;right: 0;bottom: 0;display: inline-block;background-color: #254758;padding: 1px 5px;color: #fff;font-size: 12px;}
+.result-text{word-wrap:break-word;background-color: #fff;margin: 0;padding: 20px;min-height: 100px;}
+
+footer{background-color: #032536;color: #fff;width: 100%;height: 90px;text-align: center;line-height: 90px;font-size: 14px;}
+footer a{color: #fff;text-decoration: none;}
+footer a:hover{text-decoration: underline;
